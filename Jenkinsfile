@@ -1,5 +1,10 @@
-pipeline {	   
-stage('Slave') {           
-agent { label 'PC_SERGIO' as String }            
-steps {               
-  script {bat 'echo %PATH%'}          }         }}
+pipeline {
+    agent none
+    stages {
+         stage('Example Test') {
+            steps {
+                echo 'Hello'
+            }
+        }
+    }
+}
