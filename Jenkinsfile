@@ -1,4 +1,4 @@
-pipeline {agent any;	   
+pipeline {	   
 stage('Slave') {           
 agent { label 'PC_SERGIO' as String }            
 steps {               
